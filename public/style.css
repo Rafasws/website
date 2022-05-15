@@ -372,3 +372,32 @@ h3 { font-size: var(--fs-h3) }
 .social-list__link {
     padding: .5em;
 }
+
+/* Resume */
+
+.download-btn{
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text-color);
+    display: inline-flex;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 1rem;
+    align-items: center;
+}
+.download-btn:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+    transition: .3s;
+}
+  
+.download-btn:hover:after {
+    width: 100%;
+}
